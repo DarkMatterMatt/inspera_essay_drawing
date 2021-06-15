@@ -1,0 +1,13 @@
+# input files
+*.bmp
+*.gif
+*.jpeg
+*.jpg
+*.png
+*.webp
+
+# output file
+index.html
+
+# dependencies
+node_modules/

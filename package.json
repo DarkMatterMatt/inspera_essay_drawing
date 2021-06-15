@@ -1,0 +1,36 @@
+{
+  "name": "inspera_essay_drawing",
+  "version": "0.0.1",
+  "description": "",
+  "main": "build.ts",
+  "scripts": {
+    "start": "npm run build && npm run serve",
+    "watch": "chokidar index.ts --command \"npm run build\"",
+    "build": "ts-node build.ts",
+    "serve": "light-server -o -q -s . -w \"build.ts, *.png,*.jpg,*.jpeg # npm run build\"",
+    "lint": "eslint . --fix --ext .ts",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DarkMatterMatt/inspera_essay_drawing.git"
+  },
+  "author": "",
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/DarkMatterMatt/inspera_essay_drawing/issues"
+  },
+  "homepage": "https://github.com/DarkMatterMatt/inspera_essay_drawing#readme",
+  "dependencies": {
+    "light-server": "^2.9.1",
+    "moment": "^2.29.1",
+    "ts-node": "^10.0.0",
+    "typescript": "^4.3.2"
+  },
+  "devDependencies": {
+    "@types/node": "^15.12.2",
+    "@typescript-eslint/eslint-plugin": "^4.27.0",
+    "@typescript-eslint/parser": "^4.27.0",
+    "eslint": "^7.28.0"
+  }
+}
